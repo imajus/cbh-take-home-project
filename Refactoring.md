@@ -9,3 +9,8 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+For this refactoring I've decided to pursue the following goals:
+1. Eliminate the duplication of logic used to generate a SHA3-512 hash from the string data.
+2. Remove unnecessary conditional checks which are impossible to reach.
+Generally, I prefer to use `const` for variable declarations whenever possible, but in this case, using `let` actually improves the readability of the source code, so I've chosen to keep it.
