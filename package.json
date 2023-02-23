@@ -4,12 +4,15 @@
   "description": "",
   "main": " ",
   "scripts": {
-    "test": "jest",
+    "test": "npx mocha dpk.test.js",
     "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^28.1.0"
+    "chai": "^4.3.7",
+    "jest": "^28.1.0",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.1"
   }
 }
